@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--[if IE 9]>    <html class="ie9"> <![endif]-->
+<!--[if !(IE)]><!--> <html> <!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width" initial-scale=1.0 maximum-scale=1.0 user-scalable=no />
+  <title>Occupotty</title>
+
+  <link rel="stylesheet" type="text/css" href="{%=o.htmlWebpackPlugin.files.css%}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="apple-touch-icon-iphone.png" />
+  <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+</head>
+<body>
+
+  <!--
+    Use a container for rendering and trashing the React App otherwise
+    other libs that might require to attach something to the dom could
+    end up getting its nodes detached or trashed due to react rendering
+  -->
+  <div id="reactApplication" class='react-app'></div>
+
+  <script type="text/javascript" src="{%=o.htmlWebpackPlugin.files.chunks['vendor'].entry%}"></script>
+  <script type="text/javascript" src="{%=o.htmlWebpackPlugin.files.chunks['app'].entry%}"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+height = 75px
+maxWidth = 1100px
+
+
+.occupotty__header
+  width 100%
+  padding 10px 20px
+  text-align left
+  height: 100px
+  background: rgba(255, 255, 255, .2)
+  box-sizing border-box
+
+
+.occupotty__header__inner
+  margin 0 auto
+  max-width maxWidth
+
+
+.occupotty
+  max-width 600px
+  margin 0 auto
+  display flex
+  padding-bottom: 40px
+  flex-wrap wrap
+
+  @media screen and (min-width: 900px) {
+    flex-wrap nowrap
+    padding-top 40px
+    max-width: maxWidth
+  }
+
+.occupotty__body
+  flex-grow 1
+  color white
+  padding 0 20px
+  margin-top 10px
+
+
+.occupotty__statuses
+  width 100%
+  flex-wrap wrap
+  margin: 0 auto
+
+  @media screen and (min-width 900px) {
+    width 450px
+    flex-shrink 0
+  }
+
+
+
+
+.occupotty__header__count
+  float right
+  line-height 78px
+  font-size 24px
+  color white

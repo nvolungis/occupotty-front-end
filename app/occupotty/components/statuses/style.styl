@@ -1,0 +1,68 @@
+height = 75px
+
+
+.roomText
+  text-transform uppercase
+  color white
+  font-size 18px
+  align-self right
+  flex-grow 1
+  text-align right
+  vertical-align middle
+  padding 0
+  margin 0
+  line-height: height
+
+  @media screen and (min-width 600px)
+    font-size: 22px
+
+
+.svgCircle
+  display inline-block
+  border-radius 50%
+  height: height
+  width: height
+  background rgba(255, 255, 255, .8)
+  box-sizing border-box
+  padding 7px
+
+
+.status
+  width 100%
+  display flex
+  text-align center
+  justify-content center
+  align-self stretch
+  flex-direction column
+  box-sizing border-box
+  padding 10px 20px
+
+
+.status__inner
+  width 100%
+  background rgba(255, 255, 255, .5)
+  flex-grow 0
+  display flex
+  border-radius 15px
+  align-self center
+  text-align center
+  box-sizing border-box
+  padding: 10px 20px
+  animation open-animation 20s linear
+
+  &.is-first-render
+    animation-duration 0s
+
+  &.is-occupied
+    animation occupied-animation 1s linear
+
+@keyframes occupied-animation{
+  from { background: rgba(255, 0, 0, .5)}
+  to {background: rgba(255, 255, 255, .5)}
+}
+
+@keyframes open-animation{
+  from { background: rgba(0, 255, 0, .5)}
+  to {background: rgba(255, 255, 255, .5)}
+}
+

@@ -1,0 +1,63 @@
+.search
+  background none
+  min-height 300px
+
+.search__box
+  padding 20px
+  background rgba(255, 255, 255, .5)
+  border-radius 20px
+  display flex
+  margin: 0 auto
+  /* max-width 530px */
+
+  @media screen and (min-width: 900px) {
+    max-width none
+  }
+
+
+.search__box__input
+  width 100%
+  border none
+  line-height 30px
+  font-size 20px
+  background none
+  padding 10px
+  box-sizing border-box
+  color white
+  text-transform uppercase
+
+  &:focus
+    outline none
+
+
+.search__box__control
+  width 60px
+  height 50px
+  border-radius 10px
+  text-align center
+  line-height 50px
+  font-size 25px
+  background rgba(255, 255, 255, .5)
+
+
+.search__results
+  background rgba(255, 255, 255, .8)
+  border-radius 20px
+  padding 20px
+  list-style none
+
+
+.search__result
+  list-style none
+  padding 10px
+  cursor pointer
+  color #E92754
+  opacity .8
+  border-bottom: 1px solid #e92754
+
+  &:last-child
+    border-bottom: none
+
+  &:hover
+    opacity 1
+
